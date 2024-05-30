@@ -1,0 +1,44 @@
+.section-user{
+    background: image-set(url("/assets/Various/pexels-markus-winkler-1430818-11392632.jpg")) bottom / cover fixed no-repeat;
+}
+.form__container{
+    min-width: 400px;
+    margin: 0 auto;
+}
+.form__text{
+    right: 0;
+}
+.form{
+    margin: 0;
+    background-color: #fefefe;
+    border-radius: 8px;
+    /* box-shadow: 0px 0px 80px 1px #f908; */
+}
+.form__input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.form__line{
+    position: relative;
+    bottom: 1.5em;
+    height: 1px;
+    background-color: #000;
+}
+.form__label{
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    transform: translateY(-.5em);
+    transition: transform .5s, color .3s;
+}
+.form__btn{
+    background-color: inherit;
+}
+.form__input:not(:placeholder-shown) + .form__label,
+.form__input:focus + .form__label{
+    transform: translateY(-22px) scale(.7);
+    transform-origin: top left;
+    color: #f90;
+    text-shadow: 0 0 1px #f90;
+}

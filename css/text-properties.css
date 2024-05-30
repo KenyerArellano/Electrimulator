@@ -1,0 +1,87 @@
+.montserrat{
+    font-family: Montserrat;
+}
+.open-sans{
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+.caviar-dreams{
+    font-family: 'Caviar Dreams';
+    font-weight: 300;
+}
+.extra-big-text{
+    font-size: 58px;
+    line-height: 65px;
+}
+.italic{
+    font-style: italic;
+}
+.big-text{
+    font-size: 35px;
+    line-height: 40px;
+}
+.medium-big-text{
+    font-size: 24px;
+    line-height: 28px;
+}
+.medium-text{
+    font-size: 18px;
+    line-height: 28px;
+}
+.text-white{
+    color: #fefefe;
+}
+.text-black{
+    color: #222;
+}
+.text-gray{
+    color: #515151;
+}
+.text-orange{
+    color: #f90;
+}
+.text-blue{
+    color:#146eb4;
+}
+.text-shadow-black{
+    text-shadow: 0 0 3px #222;
+}
+.text-shadow-white{
+    text-shadow: 0 0 3px #fefefe;
+}
+.text-center{
+    text-align: center;
+
+}
+.text-left{
+    text-align: left;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-500{
+    font-weight: 500;
+}
+.text-600{
+    font-weight: 600;
+}
+.text-capitalize{
+    text-transform: capitalize;
+}
+.text-lowercase{
+    text-transform: lowercase;
+}
+.text-decoration::after{
+    content: "";
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    border-bottom: 0.15em solid #146eb4;
+    width: 0%;
+    display: inline-block;
+    transition: width 0.5s ease;
+}
+.text-decoration__container:focus > .text-decoration::after,
+.text-decoration__container:hover > .text-decoration::after{
+    width: 100%
+}

@@ -1,0 +1,51 @@
+.section-1{
+    background: image-set(url("/assets/Various/pexels-chih-mlng-huang-81432666-8787089.jpg")) bottom / cover fixed no-repeat;
+    max-height: 650px;
+    min-height: 600px;
+}
+.section-1__text{
+    width: 55%;
+    margin: auto;
+}
+.section-1__container-btns{
+    margin-top: 4em;
+}
+/*
+DESCRIPTIVE ARTICLE'S
+*/
+.descriptive{
+    box-sizing: border-box;
+    text-align: left;
+}
+.descriptive__header{
+    width: 38%;
+    padding: 3%;
+}
+.descriptive__center{
+    display: block;
+    align-content: center;
+    position: relative;
+    bottom: 20vmin;
+}
+.descriptive__main{
+    width: 59%;
+}
+.descriptive__section{
+    box-sizing: border-box;
+    width: 48%;
+    padding: 3%;
+}
+.descriptive__icon{
+    position: relative;
+    top: 1ex;
+    width: 30px;
+    margin: 0 1em 0 0;
+}
+.descriptive__btn{
+    position: absolute;
+}
+.descriptive2{
+    width: 20%;
+    height: 200px;
+    margin: 0 3%;
+}
