@@ -15,7 +15,7 @@
     background-color: #146eb4;
 }
 .bg-white{
-    background-color: #fefefe;
+    background-color: var(--color-white)
 }
 .box-vmax{
     width: 100%;
@@ -59,4 +59,7 @@
 }
 .relative{
     position: relative;
+}
+.overflow-auto{
+    overflow:auto;
 }

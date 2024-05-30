@@ -29,25 +29,25 @@
     line-height: 28px;
 }
 .text-white{
-    color: #fefefe;
+    color: var(--color-white);
 }
 .text-black{
-    color: #222;
+    color: var(--color-black);
 }
 .text-gray{
-    color: #515151;
+    color: var(--color-gray);
 }
 .text-orange{
-    color: #f90;
+    color: var(--color-base-1);
 }
 .text-blue{
-    color:#146eb4;
+    color:var(--color-base-2);
 }
 .text-shadow-black{
-    text-shadow: 0 0 3px #222;
+    text-shadow: 0 0 3px var(--color-black);
 }
 .text-shadow-white{
-    text-shadow: 0 0 3px #fefefe;
+    text-shadow: 0 0 3px var(--color-white);
 }
 .text-center{
     text-align: center;
@@ -76,7 +76,7 @@
     position: absolute;
     top: 1.5em;
     left: 0;
-    border-bottom: 0.15em solid #146eb4;
+    border-bottom: 0.15em solid var(--color-base-2);
     width: 0%;
     display: inline-block;
     transition: width 0.5s ease;
