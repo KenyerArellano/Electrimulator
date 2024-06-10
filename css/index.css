@@ -49,3 +49,14 @@ DESCRIPTIVE ARTICLE'S
     height: 200px;
     margin: 0 3%;
 }
+@media screen and (max-width:700px){
+    .descriptive__header{
+        width: 45%;
+        padding: 3%;
+    }
+    .descriptive__section{
+        box-sizing: border-box;
+        width: 55%;
+        padding: 3%;
+    }
+}

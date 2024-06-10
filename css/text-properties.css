@@ -37,10 +37,10 @@
 .text-gray{
     color: var(--color-gray);
 }
-.text-orange{
+.text-color1{
     color: var(--color-base-1);
 }
-.text-blue{
+.text-color2{
     color:var(--color-base-2);
 }
 .text-shadow-black{
@@ -84,4 +84,26 @@
 .text-decoration__container:focus > .text-decoration::after,
 .text-decoration__container:hover > .text-decoration::after{
     width: 100%
+}
+@media screen and (max-width:800px){
+    body{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .extra-big-text{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .big-text{
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .medium-big-text{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .medium-text{
+        font-size: 15px;
+        line-height: 25px;
+    }
 }

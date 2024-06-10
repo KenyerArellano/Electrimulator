@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECTRIMULATOR</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/box-properties.css">
+    <link rel="stylesheet" href="/css/text-properties.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/user.css">
+    <!--Icons "Google Icons"-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"> 
+</head>
+<body class="section-user">
+    <header class="nav-menu">
+        <div class="nav-menu__container">
+            <div class="nav-menu__logo">
+                <a href="#Principle" class="logo" tabindex="1">
+                    <img src="/assets/Logo/pngwing.com.png" alt="LogoTipo">
+                </a>
+            </div>
+            <nav class="nav-menu__navbar">
+                <ul>
+                    <li class="nav-menu__li" tabindex="2"><a href="." class="nav-menu__a" tabindex="2">Acerca de</a></li>
+                    <li class="nav-menu__li" tabindex="3"><a href="/Foro.html" class="nav-menu__a">Foro</a></li>
+                    <li class="nav-menu__li" tabindex="4"><a href="/Documentacion.html" class="nav-menu__a">Documentación</a></li>
+                    <li class="nav-menu__li" tabindex="5"><a href="." class="nav-menu__a">Capacitación</a></li>
+                    <li class="nav-menu__li nav-menu__li--actual"" tabindex="6"><a href="." class="nav-menu__a nav-menu__a--actual">Usuario</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="qvboxmodel">
+            <div class="box-darkened text-center text-white no-margin-top">
+                <article class="containexr-full container no-margin-top no-margin-bottom text-shadow-black medium-big-text text-600 caviar-dreams italic text-center no-padding-bottom">
+                    <p class="section-1__text text-shadow-black">La capacitación de los empleados es de suma importancia, ya que de allí surge el éxito, eficacia y eficiencia de una empresa</p>
+                </article>
+                <div class="form__box form__box--register">
+                        <form action="" method="POST" id="form" class="form form--register caviar-dreams text-600">
+                            <h1 class="big-text">Registrate</h1>
+                            <fieldset>
+                                <legend>Datos del Usuario</legend>
+                                <div class="form__inputs inline-block">
+                                    <span class="material-symbols-outlined">
+                                        unpublished</span>
+                                    <input type="text" name="name" placeholder=" " maxlength="25" id="name" class="montserrat text-black" required><span class="inputs__bar"></span>
+                                    <label for="name">Nombre</label>
+                                </div>
+                                <div class="form__inputs inline-block">
+                                    <input type="text" name="last-name" placeholder=" " maxlength="25" id="last-name" class="montserrat text-black" required><span class="inputs__bar"></span>
+                                    <label for="last-name">Apellido</label>
+                                </div>
+                                <div class="form__inputs inline-block">
+                                    <select name="CI-type" id="CI-type" class="input__select btn btn--border-color2 btn--fill-out-color2">
+                                        <option value="V" selected>V</option>
+                                        <option value="E">E</option>
+                                    </select>
+                                    <input type="text" name="CI" placeholder=" " maxlength="8" id="CI" class="montserrat text-black" required><span class="inputs__bar"></span>
+                                    <label for="CI">Documento de Identidad</label>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Metodos de Contacto</legend>
+                                <div class="form__inputs">
+                                    <input type="email" name="email" placeholder=" " id="email" class="montserrat text-black" required><span class="inputs__bar"></span>
+                                    <label for="email">Correo Electrónico</label>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Seguridad de la Cuenta</legend>
+                                <div class="form__inputs inline-block">
+                                    <input type="password" name="password" placeholder=" " id="password" class="montserrat text-black" required><span class="inputs__bar"></span>
+                                    <label for="password">Contraseña</label>
+                                </div>
+                                <div class="form__inputs inline-block">
+                                    <input type="password" name="confirm-password" placeholder=" " id="confirm-password" class="montserrat text-black" required><span class="inputs__bar"></span>
+                                    <label for="confirm-password">Confirmar Contraseña</label>
+                                </div>
+                            </fieldset>
+                            <button class="form__btn btn btn--fill-out-color1 btn--border-color1 bg-white">Registrarse</button>
+                        </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.flaticon.es/iconos-gratis/historia" title="historia iconos" target="_blank">Historia iconos creados por Pixelmeetup - Flaticon</a>
+    </footer>
+    <script src="/js/register.js"></script>
+</body>

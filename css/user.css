@@ -1,23 +1,48 @@
 .section-user{
     background: image-set(url("/assets/Various/pexels-markus-winkler-1430818-11392632.jpg")) bottom / cover fixed no-repeat;
 }
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: var(--color-check-green);
+}
 .form__box{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 100vh;
 }
-#form{
+.form{
     width: 400px;
     padding: 40px 0;
     color: var(--color-black);
     background: var(--color-white);
-    box-shadow: 0 0 6px 0 var(--color-base-1);
+    box-shadow: 0 0 30px 0 var(--color-base-1);
     border-radius: 10px;
+}
+.form--register{
+    width: 700px;
+    margin: 50px auto;
+}
+.form__box--register{
+    height: auto;
+}
+fieldset{
+    margin: 25px 10px;
+    border: none;
+    border-top: 1px solid var(--color-base-1);
+}
+fieldset legend{
+    padding: 5px;
+    text-align: left;
+    color: var(--color-base-1);
 }
 .form__inputs{
     position: relative;
-    margin: 45px;
+    margin: 15px 40px;
     text-align: left;
     background: none;
 }
@@ -32,7 +57,31 @@ input{
 }
 input:focus{
     outline: none;
-    color: var(--color-gray)
+    color: var(--color-base-1)
+}
+input:focus~label,
+input:not(:placeholder-shown)~label{
+    bottom: 25px;
+    font-size: 12px;
+    color: var(--color-base-1);
+}
+.inputs__bar{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.inputs__bar::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-base-1);
+    content: "";
+    transition: width 0.5s ease;
+}
+input:focus~.inputs__bar::before{
+    width: 110%;
 }
 label{
     position: absolute;
@@ -40,5 +89,32 @@ label{
     left: 5px;
     color: var(--color-gray);
     pointer-events: none;
-    transition: 0.5 ease-in-out all;
+    transition: all 0.5s ease-in-out 50ms;
+}
+.input__select{
+    position: absolute;
+    bottom: -20px;
+    left: -120px;
+}
+.invalid{
+
+}
+@media screen and (max-width:750px) {
+    #form{
+        width: 80%;
+    }
+}
+@media screen and (max-width:499px) {
+    .input__select{
+        bottom: -20px;
+        left: -100px;
+        padding: 0.4em 1.5em;
+    }
+}
+@media screen and (max-width:430px){
+    .input__select{
+        bottom: -20px;
+        left: -80px;
+        padding: 0.2em 1em;
+    }
 }

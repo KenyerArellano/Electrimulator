@@ -10,7 +10,7 @@ body{
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0.05em;
-    background-color: #fefefe;
+    background-color: var(--color-white);
     color: #222;
 }
 ul,
@@ -95,8 +95,10 @@ BOTONES
     border: 2px solid var(--color-white);
     border-radius: 100px;
     font-weight: 600;
-    cursor: pointer;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    background: none;
+    cursor: pointer;
     transition: all 0.5s ease 0s;
 }
 .btn--fill-out-white:hover{
@@ -104,15 +106,20 @@ BOTONES
     background: var(--color-white);
     color: var(--color-black);
 }
-.btn--fill-out-orange:hover{
-    box-shadow: 0 0 50px 20px #f906;
+.btn--fill-out-color1:hover{
+    box-shadow: 0 0 20px 1px var(--color-base-1);
     background: var(--color-base-1);
     color: var(--color-white);
 }
-.btn--border-orange{
+.btn--fill-out-color2:hover{
+    box-shadow: 0 0 20px 1px var(--color-base-2);
+    background: var(--color-base-2);
+    color: var(--color-white);
+}
+.btn--border-color1{
     border: 2px solid var(--color-base-1);
 }
-.btn--border-blue{
+.btn--border-color2{
     border: 2px solid var(--color-base-2);
 }
 .btn--border-black{
