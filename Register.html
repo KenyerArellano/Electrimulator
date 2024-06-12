@@ -43,43 +43,61 @@
                             <h1 class="big-text">Registrate</h1>
                             <fieldset>
                                 <legend>Datos del Usuario</legend>
-                                <div class="form__inputs inline-block">
-                                    <span class="material-symbols-outlined">
-                                        unpublished</span>
+                                <div class="form__inputs inline-block" id="group-input__name">
+                                    <span class="material-symbols-outlined check-invalid" id="check-invalid-name"></span>
+                                    <span class="material-symbols-outlined check-valid" id="check-valid-name"></span>
                                     <input type="text" name="name" placeholder=" " maxlength="25" id="name" class="montserrat text-black" required><span class="inputs__bar"></span>
                                     <label for="name">Nombre</label>
                                 </div>
-                                <div class="form__inputs inline-block">
+                                <div class="form__inputs inline-block" id="group-input__last-name">
+                                    <span class="material-symbols-outlined check-invalid" id="check-invalid-last-name"></span>
+                                    <span class="material-symbols-outlined check-valid" id="check-valid-last-name"></span>
                                     <input type="text" name="last-name" placeholder=" " maxlength="25" id="last-name" class="montserrat text-black" required><span class="inputs__bar"></span>
                                     <label for="last-name">Apellido</label>
                                 </div>
-                                <div class="form__inputs inline-block">
+                                <div class="form__inputs inline-block" id="group-input__CI">
                                     <select name="CI-type" id="CI-type" class="input__select btn btn--border-color2 btn--fill-out-color2">
                                         <option value="V" selected>V</option>
                                         <option value="E">E</option>
                                     </select>
+                                    <span class="material-symbols-outlined check-invalid" id="check-invalid-CI"></span>
+                                    <span class="material-symbols-outlined check-valid" id="check-valid-CI"></span>
                                     <input type="text" name="CI" placeholder=" " maxlength="8" id="CI" class="montserrat text-black" required><span class="inputs__bar"></span>
                                     <label for="CI">Documento de Identidad</label>
                                 </div>
                             </fieldset>
                             <fieldset>
                                 <legend>Metodos de Contacto</legend>
-                                <div class="form__inputs">
+                                <div class="form__inputs" id="group-input__email">
+                                    <span class="material-symbols-outlined check-invalid" id="check-invalid-email"></span>
+                                    <span class="material-symbols-outlined check-valid" id="check-valid-email"></span>
                                     <input type="email" name="email" placeholder=" " id="email" class="montserrat text-black" required><span class="inputs__bar"></span>
                                     <label for="email">Correo Electrónico</label>
                                 </div>
                             </fieldset>
                             <fieldset>
                                 <legend>Seguridad de la Cuenta</legend>
-                                <div class="form__inputs inline-block">
+                                <div class="form__inputs inline-block" id="group-input__password">
+                                    <span class="material-symbols-outlined check-invalid" id="check-invalid-password"></span>
+                                    <span class="material-symbols-outlined check-valid" id="check-valid-password"></span>
                                     <input type="password" name="password" placeholder=" " id="password" class="montserrat text-black" required><span class="inputs__bar"></span>
                                     <label for="password">Contraseña</label>
                                 </div>
-                                <div class="form__inputs inline-block">
+                                <div class="form__inputs inline-block" id="group-input__confirm-password">
+                                    <span class="material-symbols-outlined check-invalid" id="check-invalid-confirm-password"></span>
+                                    <span class="material-symbols-outlined check-valid" id="check-valid-confirm-password"></span>
                                     <input type="password" name="confirm-password" placeholder=" " id="confirm-password" class="montserrat text-black" required><span class="inputs__bar"></span>
                                     <label for="confirm-password">Confirmar Contraseña</label>
                                 </div>
                             </fieldset>
+                            <div class="group__invalid-paragraphs">
+                                <p id="invalid-paragraph__name" class="no-visible">Nombre Invalido</p>
+                                <p id="invalid-paragraph__last-name" class="no-visible">Apellido Invalido</p>
+                                <p id="invalid-paragraph__CI" class="no-visible">Documento Invalido</p>
+                                <p id="invalid-paragraph__email" class="no-visible">Correo Invalido</p>
+                                <p id="invalid-paragraph__password" class="no-visible">Contraseña invalida, debe tener una longitud entre 6 y 12 dígitos y conterner al menos una mayuscula, una minuscula, un dígito y un carácter especial</p>
+                                <p id="invalid-paragraph__confirm-password" class="no-visible">Las Contraseñas Deben Coincidir</p>
+                            </div>
                             <button class="form__btn btn btn--fill-out-color1 btn--border-color1 bg-white">Registrarse</button>
                         </form>
                 </div>

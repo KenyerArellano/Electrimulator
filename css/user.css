@@ -7,7 +7,15 @@
     'wght' 400,
     'GRAD' 0,
     'opsz' 24;
-    color: var(--color-check-green);
+    position: absolute;
+    top: 6px;
+    right: -27px;
+}
+.check-valid{
+    color: var(--color-check-valid);
+}
+.check-invalid{
+    color: var(--color-check-invalid);
 }
 .form__box{
     display: flex;
@@ -96,8 +104,28 @@ label{
     bottom: -20px;
     left: -120px;
 }
-.invalid{
-
+.group__invalid-paragraphs,
+.invalid label,
+.invalid input,
+.invalid input:focus~label,
+.invalid input:not(:placeholder-shown)~label{
+    color: var(--color-check-invalid);
+}
+.invalid input{
+    border-bottom: 1px solid var(--color-check-invalid);
+}
+.invalid .inputs__bar::before{
+    background-color: var(--color-check-invalid);
+}
+.group__invalid-paragraphs{
+    width: 80%;
+    margin: auto;
+}
+.group__invalid-paragraphs p{
+    margin: 30px auto;
+}
+.no-visible{
+    display: none;
 }
 @media screen and (max-width:750px) {
     #form{

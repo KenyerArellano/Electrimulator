@@ -4,6 +4,6 @@
     --color-gray: #4f4f4f;
     --color-base-1: #f92;
     --color-base-2: #146eb4;
-    --color-check-green: #37F230;
-    --color-check-red #F20F0F;
+    --color-check-valid: #37F230;
+    --color-check-invalid: #F20F0F;
 }
